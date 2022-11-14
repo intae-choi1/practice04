@@ -6,7 +6,7 @@ def tmp(*args,**kwargs):
 c = {
     "d": 0,
     "b": 11,
-    "b": 22,
+    "b": 222,
 }
 
 tmp(1,2,c, b=5)
