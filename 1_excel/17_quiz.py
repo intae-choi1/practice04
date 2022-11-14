@@ -20,7 +20,7 @@ for item in data:
 
 for i, cell in enumerate(ws['D']):
     if i == 0: continue
-    cell.value = 10
+    cell.value = 9
 
 for i, row in enumerate(ws.iter_rows(min_row=1, max_row=ws.max_row, min_col=2, max_col=9)):
     print(row)
