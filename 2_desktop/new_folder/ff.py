@@ -46,7 +46,6 @@ print(size, "bytes")
 
 # 파일 목록
 print(os.listdir()) # 모든 폴더, 파일 정보 가져오기 (cwd 기준)
-print(os.listdir("img")) # 주어진 경로 아래서 가져오기
 print(os.listdir("..")) # 주어진 경로 아래서 가져오기
 
 print()
@@ -72,7 +71,7 @@ print(os.path.dirname(base))
 print(os.path.dirname(os.path.dirname(base)))
 
 
-result = os.walk(os.path.dirname(base)) # generator 반환
+result = os.walk(os.path.dirname("../")) # generator 반환
 for root, dirs, files in result:
     # root: 상위 dir, dirs: root에 포함된 디렉터리들, files: root에 포함된 파일들
     print(root, dirs, files)
